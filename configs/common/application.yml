@@ -20,8 +20,6 @@ spring:
             recordExceptions: # 실패로 간주할 예외 목록
               - java.lang.RuntimeException
               - org.springframework.web.client.HttpServerErrorException
-  kafka:
-    bootstrap-servers: 54.116.5.126:9092, 54.116.5.126:9093, 54.116.5.126:9094
 
 feign:
   client:
