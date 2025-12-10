@@ -27,3 +27,10 @@ spring:
             - Path=/v1/report/**
           filters:
             - 'RewritePath=/v1/report/(?<path>.*), /\${path}'
+
+        - id: spot-service
+          uri: lb://spot-service
+          predicates:
+            - Path=/v1/spot/**
+          filters:
+            - 'RewritePath=/v1/spot/(?<path>.*), /\${path}'
