@@ -12,32 +12,32 @@ spring:
           predicates:
             - Path=/v1/user/**
           filters:
-            - 'RewritePath=/v1/user(?:/(?<path>.*))?, /\\${path}'
+            - "RewritePath=/v1/user(?:/(?<path>.*))?, /\\${path}"
 
         - id: point-service
           uri: lb://point-service
           predicates:
             - Path=/v1/point/**
           filters:
-            - 'RewritePath=/v1/point(?:/(?<path>.*))?, /\\${path}'
+            - "RewritePath=/v1/point(?:/(?<path>.*))?, /\\${path}"
 
         - id: report-service
           uri: lb://report-service
           predicates:
             - Path=/v1/report/**
           filters:
-            - 'RewritePath=/v1/report(?:/(?<path>.*))?, /\\${path}'
+            - "RewritePath=/v1/report(?:/(?<path>.*))?, /\\${path}"
 
         - id: spot-service
           uri: lb://spot-service
           predicates:
             - Path=/v1/spot/**
           filters:
-            - 'RewritePath=/v1/spot(?:/(?<path>.*))?, /\\${path}'
+            - "RewritePath=/v1/spot(?:/(?<path>.*))?, /\\${path}"
 
         - id: image-ai-service
           uri: lb://image-ai-service
           predicates:
             - Path=/v1/image/**
           filters:
-            - 'RewritePath=/v1/image(?:/(?<path>.*))?, /\\${path}'
+            - "RewritePath=/v1/image(?:/(?<path>.*))?, /\\${path}"
