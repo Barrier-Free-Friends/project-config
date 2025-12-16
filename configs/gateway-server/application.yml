@@ -41,3 +41,10 @@ spring:
             - Path=/v1/image/**
           filters:
             - "RewritePath=/v1/image(?:/(?<path>.*))?, /\\${path}"
+
+        - id: map-service
+          uri: lb://map-service
+          predicates:
+            - Path=/v1/map/**
+          filters:
+            - "RewritePath=/v1/map(?:/(?<path>.*))?, /\\${path}"
