@@ -24,8 +24,8 @@ spring:
 feign:
   client:
     default: # 공통 설정
-      connectTimeout: 5000
-      readTimeout: 5000
+      connectTimeout: 300000
+      readTimeout: 300000
       loggerLevel: full
 
 
