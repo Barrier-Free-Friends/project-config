@@ -100,4 +100,4 @@ springdoc:
 
 openapi:
   service:
-    url:
+    url: https://api.barrier-free-friends.xyz
