@@ -67,7 +67,7 @@ springdoc:
         name: MAP API
       - url: /report-service/v3/api-docs
         name: REPORT API
-      - url: /image-ai-service/v3/api-docs
+      - url: /image-ai-service/docs
         name: IMAGE API
       - url: /point-service/v3/api-docs
         name: POINT API
