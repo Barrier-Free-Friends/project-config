@@ -93,6 +93,10 @@ springdoc:
     doc-expansion:
   paths-to-match:
     - /**
+  server:
+    # 이 부분을 게이트웨이 주소로 설정합니다.
+    url: https://api.barrier-free-friends.xyz
+    description: "Gateway Server"
 
 openapi:
   service:
