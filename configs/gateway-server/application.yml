@@ -48,3 +48,28 @@ spring:
             - Path=/v1/map/**
           filters:
             - "RewritePath=/v1/map(?:/(?<path>.*))?, /\\${path}"
+
+springdoc:
+  enable-native-support: true
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /api-docs.html
+    operations-sorter: alpha
+    tags-sorter: alpha
+    doc-expansion: full
+    config-url: /v3/api-docs/swagger-config
+    urls:
+      - url: /user-service/v3/api-docs
+        name: USER API
+      - url: /map-service/v3/api-docs
+        name: MAP API
+      - url: /report-service/v3/api-docs
+        name: REPORT API
+      - url: /image-ai-service/v3/api-docs
+        name: IMAGE API
+      - url: /point-service/v3/api-docs
+        name: POINT API
+      - url: /spot-service/v3/api-docs
+        name: SPOT API
